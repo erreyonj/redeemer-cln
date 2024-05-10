@@ -12,6 +12,7 @@ export default {
       },
       gridTemplateColumns:{
         '70-30':'70% 28%',
+        '30-70':'28% 65%',
         '50-50':'48% 48%'
       },
       backgroundImage: {
@@ -46,12 +47,19 @@ export default {
             translate: 'calc(10 * 40rem)'
           }
         },
+        slideOutL:{
+          'to':{
+            transform:'translateX(-500px)',
+            opacity: '0'
+          }
+        }
       },
       animation:{
         pendSlideL: 'pendSlideL 1s infinite',
         pendSlideR: 'pendSlideR 1s infinite',
         infScrollLft: 'infScrollLft 80s infinite',
         infScrollRt: 'infScrollRt 80s infinite',
+        slideOutL: 'slideOutL .7s ease-in-out'
       },
     },
   },

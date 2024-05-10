@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <>
       <Splash />
-      <Services />
+      <Services isPage={false} />
       <About />
       <Gallery />
       <HmReviews />
