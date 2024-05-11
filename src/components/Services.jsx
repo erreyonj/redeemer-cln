@@ -18,7 +18,7 @@ const Services = (isPage) => {
 
     // Component Styling
     // optional tailwind classes if this component is embed level or landing page level
-    const pageClass = 'h-[450px] mt-20 flex flex-row place-content-center lg:grid-cols-50-50 lg:mx-10'
+    const pageClass = 'h-[450px] mt-20 flex flex-row place-content-center lg:mx-10'
     const notPageClass = 'h-[450px] flex flex-row place-content-center lg:mx-10' 
     // returns a tailwind class for ordering elements on a page
     const second = () => 'order-2'
