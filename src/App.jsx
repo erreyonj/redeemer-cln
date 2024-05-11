@@ -5,6 +5,7 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider} f
 import HomePage from './pages/HomePage'
 import ServicesPg from './pages/ServicesPg'
 import MainLayout from './layouts/MainLayout'
+import AboutPg from './pages/AboutPg'
 
 
 
@@ -13,6 +14,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<MainLayout/>}>
       <Route index element={ <HomePage/> }/>
       <Route path='/Services' element={ <ServicesPg/> }/>
+      <Route path='/About' element={ <AboutPg/> }/>
     </Route>
   )
 )
