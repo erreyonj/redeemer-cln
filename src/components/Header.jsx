@@ -10,7 +10,7 @@ import { Link , useLocation }  from 'react-router-dom'
 
 const Header = () => {
     // Component Data
-    const navPages = ['Services','About','Gallery','Reviews','Contact']
+    const navPages = ['Services','About','Gallery','Contact']
     
     // Component Function
     const renderMenuLinks = () => navPages.map((page,i)=><Link key={i} href={`/${page}`} className='w-5/6 text-center font-bebas text-5xl my-5 mx-auto border-b border-white transition-text duration-150 hover:text-6xl'>{page}</Link>)

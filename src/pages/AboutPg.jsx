@@ -12,7 +12,7 @@ const AboutPg = () => {
     
   return (
     <>
-      <div id="aboutWrapper" className="flex flex-row xl:mt-20 xl:h-[705px]">
+      <div id="aboutWrapper" className="flex flex-row xl:mt-20 xl:h-[750px]">
         <div id="aboutCore">
             <img src={bigIcon} alt="" />
             <p></p>
