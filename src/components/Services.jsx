@@ -40,7 +40,7 @@ const Services = (isPage) => {
             <p className="hidden md:block lg:w-1/2 md:mx-auto text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dignissimos, aliquid, recusandae pariatur obcaecati voluptate soluta aut eos dicta cupiditate eum ratione illo id. Officiis sequi eius cupiditate repudiandae quaerat.</p>
         </div>
         <div id="swipeContainer" className={`p-3 h-96 md:h-[520px] lg:w-[1830px] ${(currentPage==='Services')&&first()} overflow-hidden`}>
-            <div id="serviceCards" className={`h-[350px] md:w-[80] lg:w-[675px] md:h-[400px] py-5 ${isPage?'':''} gap-5 flex flex-row place-content-between overflow-scroll lg:flex-nowrap snap-x *:mx-5  md:h-auto `}> {/* <-- maybe add shadow around cards here? shadow-slate-300 shadow-inner*/}
+            <div id="serviceCards" className={`h-[350px] md:w-[80] lg:w-[675px] md:h-[400px] py-5 ${isPage?'':''} gap-5 flex flex-row place-content-between overflow-scroll lg:flex-nowrap snap-x *:mx-5  md:h-auto `}> {/* <-- maybe add shadow around cards here? shadow-slate-300 shadow-inner */}
                 {ourServices.map((service,i)=><ServiceCard key={i} title={service} description={serviceDescriptions[i]}/>)}
             </div>
             <div id="teamMemberScreen" className={`hidden xl:block absolute top-[495px] left-[615px] h-[415px] w-28 bg-gradient-to-l to-transparent from-white`}> </div>
