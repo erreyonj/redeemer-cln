@@ -1,4 +1,4 @@
-import bigIcon from '../assets/parras-PH-big-icon.png'
+import theParras from '../assets/parras-PH-big-icon.png'
 
 // Page Data
 const tenets = ['Mission','Vision','Target/OurCustomer','Benefits/OurFaith']
@@ -14,7 +14,7 @@ const AboutPg = () => {
     <>
       <div id="aboutWrapper" className="flex flex-row xl:mt-20 xl:h-[750px]">
         <div id="aboutCore">
-            <img src={bigIcon} alt="" />
+            <img src={theParras} alt="" />
             <p></p>
         </div>
         <div id="aboutCarousel">
