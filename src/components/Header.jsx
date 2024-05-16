@@ -13,7 +13,7 @@ const Header = () => {
     const navPages = ['Services','About','Gallery','Contact']
     
     // Component Function
-    const renderMenuLinks = () => navPages.map((page,i)=><Link key={i} href={`/${page}`} className='w-5/6 text-center font-bebas text-5xl my-5 mx-auto border-b border-white transition-text duration-150 hover:text-6xl'>{page}</Link>)
+    const renderMenuLinks = () => navPages.map((page,i)=><Link key={i} to={`/${page}`} onClick={()=> setHeaderMenuOpen((prevState)=>!prevState)} className='w-5/6 text-center font-bebas text-5xl my-5 mx-auto border-b border-white transition-text duration-150 hover:text-6xl'>{page}</Link>)
 
     // Component State
     const [headerMenuOpen, setHeaderMenuOpen] = useState(false)
@@ -49,7 +49,7 @@ const Header = () => {
                     <a><FaInstagram /></a>
                 </div>
                 <div id="headerLogoBox" className='order-last lg:order-first'>
-                    <Link to='/'><img src={ logoImg } alt="Reedemers Clean Logo" className='h-20'/></Link>
+                    <Link to='/' onClick={()=> setHeaderMenuOpen((prevState)=>prevState&&false)}><img src={ logoImg } alt="Reedemers Clean Logo" className='h-20'/></Link>
                 </div>
     </header>
   )

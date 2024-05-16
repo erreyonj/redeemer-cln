@@ -4,13 +4,17 @@ import theParras from '../assets/parras-PH-big-icon.png'
 const ContactPg = () => {
   return (
     <>
-        <div id="contactWrapper" className="flex flex-row xl:mt-20 xl:h-[750px]">
-            <div id="contactCore">
+        <div id="contactWrapper" className="flex flex-col md:flex-row mt-32 h-[750px]">
+            <div id="contactCore" className='hidden md:block'>
                 <img src={theParras} alt="" />
                 <p></p>
             </div>
 
-            <div id="contactForm" className="">
+            <div>
+                <h1 className='font-bebas text-center text-4xl my-10'>Drop Us A Line!</h1>
+            </div>
+
+            <div id="contactForm" className="mx-auto w-full p-3">
                 <form action="" className="flex flex-col flex-wrap place-content-center *:w-full">
                     <div className="grid grid-cols-50-50 p-2 justify-between">
                         <div className="inputGroup flex flex-col">

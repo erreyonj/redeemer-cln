@@ -7,18 +7,30 @@ const ServicesPg = () => {
   // Component Data
   const ourServices = ['Commercial', 'Move In/Out', 'Specialty']
 
+  // Component Style
+  // these function adds "slide out" animation classes to show appropraite service option
+  const commSlideOut = () => {}
+  const movingSlideOut = () => {}
+  const specialtySlideOut = () => {}
+
 
   return (
     <>
       {/* <Services isPage /> */}
-      <div id="selector" className="flex flex-col xl:mt-20 xl:h-[750px] place-content-center">
-        <div className="flex flex-col place-content-center mx-auto">
+      <div id="selector" className="flex flex-col xl:mt-20 h-[750px] place-content-center">
           <p className="font-bebas text-5xl text-center mb-10">Which of our services can we offer you?</p>
-          <div className="flex place-content-center shadow-xl-inner">
-            {ourServices.map((service,index)=><h2 className="font-bebas text-2xl mx-10 text-center">{service}</h2>)}
+          <div id="serviceTracks" className="flex place-content-center shadow-xl-inner">
+            <button onClick={true}>
+              <h2 className="font-bebas text-2xl mx-10 text-center">Commercial</h2>
+            </button>
+            <button>
+              <h2 className="font-bebas text-2xl mx-10 text-center">Move In/Out</h2>
+            </button>
+            <button>
+              <h2 className="font-bebas text-2xl mx-10 text-center">Specialty</h2>
+            </button>
           </div>
         </div>
-      </div>
     </>
   )
 }
