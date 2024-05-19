@@ -43,7 +43,7 @@ const Services = (isPage) => {
             <div id="serviceCards" className={`h-[350px] md:w-[80] lg:w-[675px] md:h-[400px] py-5 ${isPage?'':''} gap-5 flex flex-row place-content-between overflow-scroll lg:flex-nowrap snap-x *:mx-5  md:h-auto `}> {/* <-- maybe add shadow around cards here? shadow-slate-300 shadow-inner */}
                 {ourServices.map((service,i)=><ServiceCard key={i} title={service} description={serviceDescriptions[i]}/>)}
             </div>
-            <div id="screen" className={`hidden xl:block absolute top-[575px] left-[380px] xl:top-[625px] xl:left-[615px] h-[350px] xl:h-[415px]  w-28 bg-gradient-to-l to-transparent from-white`}> </div>
+            <div id="screen" className={`hidden xl:block absolute top-[575px] left-[380px] xl:top-[620px] xl:left-[615px] h-[350px] xl:h-[415px]  w-28 bg-gradient-to-l to-transparent from-white`}> </div>
         </div>
     </section>
   )
