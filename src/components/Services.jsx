@@ -39,12 +39,10 @@ const Services = (isPage) => {
             
             <p className="hidden md:block lg:w-1/2 md:mx-auto text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dignissimos, aliquid, recusandae pariatur obcaecati voluptate soluta aut eos dicta cupiditate eum ratione illo id. Officiis sequi eius cupiditate repudiandae quaerat.</p>
         </div>
-        <div id="swipeContainer" className={`p-3 h-96 md:h-[520px] ${(currentPage==='Services')&&first()}`}>
-            <div id="serviceCards" className={`h-[350px] md:w-[80] lg:w-[675px] md:h-[400px] py-5 ${isPage?'':''} gap-5 flex flex-row place-content-between overflow-scroll lg:flex-nowrap snap-x *:mx-5  md:h-auto `}> {/* <-- maybe add shadow around cards here? shadow-slate-300 shadow-inner */}
-                {ourServices.map((service,i)=><ServiceCard key={i} title={service} description={serviceDescriptions[i]}/>)}
-            </div>
-            <div id="screen" className={`hidden xl:block absolute top-[575px] left-[380px] xl:top-[620px] xl:left-[615px] h-[350px] xl:h-[415px]  w-28 bg-gradient-to-l to-transparent from-white`}> </div>
+        <div id="serviceCards" className={`h-[350px] md:w-[80] lg:w-[675px] md:h-[400px] p-5 ${(currentPage==='Services')&&first()} gap-5 flex flex-row place-content-between overflow-scroll lg:flex-nowrap snap-x *:mx-5  md:h-auto `}> {/* <-- maybe add shadow around cards here? shadow-slate-300 shadow-inner */}
+            {ourServices.map((service,i)=><ServiceCard key={i} title={service} description={serviceDescriptions[i]}/>)}
         </div>
+        <div id="screen" className={`hidden xl:block absolute top-[575px] left-[380px] xl:top-[620px] xl:left-[615px] h-[350px] xl:h-[415px]  w-28 bg-gradient-to-l to-transparent from-white`}> </div>
     </section>
   )
 }
