@@ -8,6 +8,7 @@ import MainLayout from './layouts/MainLayout'
 import AboutPg from './pages/AboutPg'
 import ContactPg from './pages/ContactPg'
 import GalleryPg from './pages/GalleryPg'
+import AdminPg from './pages/AdminPg'
 
 
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route path='/About' element={ <AboutPg/> }/>
       <Route path='/Gallery' element={ <GalleryPg/> }/>
       <Route path='/Contact' element={ <ContactPg/> }/>
+      <Route path='/Admin' element={ <AdminPg/> }/>
     </Route>
   )
 )

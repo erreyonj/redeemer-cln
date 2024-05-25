@@ -1,5 +1,7 @@
 import ServiceCard from './ServiceCard'
 import { useLocation } from 'react-router-dom'
+import { MdArrowCircleRight } from "react-icons/md";
+import { MdArrowCircleLeft } from "react-icons/md";
 
 const Services = (isPage) => {
     // Component Data
@@ -19,7 +21,7 @@ const Services = (isPage) => {
     // Component Styling
     // optional tailwind classes if this component is embed level or landing page level
     const pageClass = 'h-[450px] mt-20 flex flex-row place-content-center lg:mx- xl:h-[750px]'
-    const notPageClass = 'h-[500px] lg:h-[550px] flex flex-col place-content-center md:my-5 lg:mx-10' 
+    const notPageClass = 'h-[520px] lg:h-[550px] flex flex-col place-content-center my-7 lg:mx-10' 
     // returns a tailwind class for ordering elements on a page
     const second = () => 'order-2'
     const first = () => 'order-1'
@@ -39,10 +41,14 @@ const Services = (isPage) => {
             
             <p className="hidden md:block lg:w-1/2 md:mx-auto text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dignissimos, aliquid, recusandae pariatur obcaecati voluptate soluta aut eos dicta cupiditate eum ratione illo id. Officiis sequi eius cupiditate repudiandae quaerat.</p>
         </div>
-        <div id="serviceCards" className={`h-[350px] md:w-[80] lg:w-[675px] md:h-[400px] p-5 ${(currentPage==='Services')&&first()} gap-5 flex flex-row place-content-between overflow-scroll lg:flex-nowrap snap-x *:mx-5  md:h-auto `}> {/* <-- maybe add shadow around cards here? shadow-slate-300 shadow-inner */}
+        <div id="serviceCards" className={`h-[420px] w-[475px] mx-auto lg:w-[675px] md:h-[400px] p-5 ${(currentPage==='Services')&&first()} gap-5 flex flex-row place-content-between lg:flex-nowrap snap-x *:mx-12  md:h-auto overflow-hidden`}> {/* <-- maybe add shadow around cards here? shadow-slate-300 shadow-inner */}
             {ourServices.map((service,i)=><ServiceCard key={i} title={service} description={serviceDescriptions[i]}/>)}
         </div>
-        <div id="screen" className={`hidden xl:block absolute top-[575px] left-[380px] xl:top-[620px] xl:left-[615px] h-[350px] xl:h-[415px]  w-28 bg-gradient-to-l to-transparent from-white`}> </div>
+        <div className='*:text-4xl mr-5 my-3 flex gap-12 self-end'>
+          <button> <MdArrowCircleLeft className='hover:text-5xl trasition-text duration-100'/> </button>
+          <button> <MdArrowCircleRight className='hover:text-5xl trasition-text duration-100'/> </button>
+        </div>
+        {/* <div id="screen" className={`hidden xl:block absolute top-[575px] left-[380px] xl:top-[620px] xl:left-[615px] h-[350px] xl:h-[415px]  w-28 bg-gradient-to-l to-transparent from-white`}> </div> */}
     </section>
   )
 }

@@ -23,7 +23,7 @@ const Header = () => {
 
     //Component Style
     const highlite = () => `bg-[#3B443F] shadow-inner shadow-zinc-900  duration-300`
-    const lightable = () => `shadow-none transition-all hover:bg-[#3B443F] hover:shadow-inner hover:shadow-zinc-900  duration-300`
+    const lightable = () => `shadow-none transition-all hover:bg-[#3B443F] hover:shadow-inner hover:shadow-zinc-900 duration-300`
 
 
   return (
