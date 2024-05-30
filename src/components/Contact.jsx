@@ -18,7 +18,7 @@ const [updateFormOpen, setUpdateFormOpen] = useState(false)
             <h2 className="mx-auto my-3 text-4xl font-bebas w-1/2 text-center">Contact Us</h2>
             <p className="hidden lg:block lg:w-96 lg:mx-auto text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quas doloribus, cupiditate labore consequatur, in recusandae necessitatibus, quidem quia a cum iure eaque reiciendis. Eius eaque nostrum eos. Alias, sequi?</p>
 
-            <div className="flex flex-col flex-wrap w-32 place-content-center relative top-[-3rem] z-10 left-[70%] lg:static lg:w-auto lg:mt-7">
+            <div className="flex flex-col flex-wrap w-32 place-content-center relative top-[-3rem] left-[70%] lg:static lg:w-auto lg:mt-7">
                 <p className="text-center w-28 text-xs my-1 lg:w-auto lg:text-xl">Need to modify your existing service?</p>
                 <button className="h-4 w-20 mx-auto outline-none text-xs text-white text-center bg-[#8F9586] border-[#8F9586] rounded-md hover:bg-[#FF702A] transition-colors ease-in-out lg:h-10 lg:w-32 lg:text-base" onClick={()=>setUpdateFormOpen((prevState=>!prevState))}>Click Here!</button>
             </div>
