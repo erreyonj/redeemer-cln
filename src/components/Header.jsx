@@ -39,15 +39,15 @@ const Header = () => {
                     </div>
                 </div>
                 <nav id="headerNav" className="hidden lg:block">
-                    <ul className='flex flex-row flex-nowrap flex-grow-0 place-content-center m-0 p-0 *:text-3xl'>
+                    <ul className='flex flex-row flex-nowrap flex-grow-0 place-content-center m-0 mx-5 p-0 *:text-3xl'>
                         {navPages.map((page,i)=><li key={i} className={`flex flex-row flex-wrap place-content-center ${page === currentPage ?`bg-[#3B443F] shadow-inner shadow-zinc-900  duration-300` : `shadow-none transition-all hover:bg-[#3B443F] hover:shadow-inner hover:shadow-zinc-900  duration-300`}`}><Link to={`/${page}`} className='m-5'><h2 className='font-bebas'>{page}</h2></Link></li>)}
                     </ul>
                 </nav>
-                <div id="headerSocials" className="hidden lg:flex lg:flex-row *:text-2xl lg:*:self-center lg:gap-5 lg:mr-10">
+                {/* <div id="headerSocials" className="hidden lg:flex lg:flex-row *:text-2xl lg:*:self-center lg:gap-5 lg:mr-10">
                     <a><MdFacebook /></a>
                     <a><FaTwitter /></a>
                     <a><FaInstagram /></a>
-                </div>
+                </div> */}
                 <div id="headerLogoBox" className='order-last lg:order-first'>
                     <Link to='/' onClick={()=> setHeaderMenuOpen((prevState)=>prevState&&false)}><img src={ logoImg } alt="Reedemers Clean Logo" className='h-20'/></Link>
                 </div>
