@@ -13,28 +13,28 @@
 }
 
 
-/*h1 {
+/* h1 {
     width: 30%;
     text-align: left;
     margin: 7px;
     padding: 0;
     font: 5rem/5rem "Bebas Neue", Roboto, sans-serif;
-}
+} */
 
-h2 {
+/* h2 {
     width: 60%;
     margin: 0;
     padding: 0;
     text-align: center;
     font: 4rem/4rem "Bebas Neue", Roboto, sans-serif;
-}
+} */
 
-h3 {
+/* h3 {
     width: 60%;
     margin: 0;
     padding: 0;
     font: 3rem/1.5rem "Bebas Neue", Roboto, sans-serif;
-}
+} */
 
 .btn {
     outline: none;
@@ -53,24 +53,24 @@ h3 {
 }
 
 
-.sectionBloc {
+/* .sectionBloc {
     width: 100%;
     margin: 0;
-}
+} */
 
-p{
+/* p{
     width: 48%;
     font: 1.2rem/1.5rem Roboto, sans-serif;
-}
+} */
 
-.descriptPara{
+/* .descriptPara{
     width: 80%;
     font: 1.7rem/1.9rem Roboto, sans-serif;
     display: none;
     visibility: hidden;
-}
+} */
 
-@media all and (min-width:1200){
+/* @media all and (min-width:1200){
     
 } */
 

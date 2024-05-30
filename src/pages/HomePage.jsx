@@ -15,7 +15,7 @@ const HomePage = () => {
       <Services isPage={false} />
       <About />
       <Gallery />
-      <HmReviews />
+      {/* <HmReviews /> */}
       <Contact /> 
     </>
   )
