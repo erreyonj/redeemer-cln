@@ -14,6 +14,8 @@ const [updateFormOpen, setUpdateFormOpen] = useState(false)
 
   return (
     <section id="sectionContact" className="flex flex-col lg:grid lg:grid-cols-50-50 bg-[#BABCB0]">
+
+        {/* description div with conditional paragraph */}
         <div id="contactDescription" className="flex flex-col place-content-center">
             <h2 className="mx-auto my-3 text-4xl font-bebas w-1/2 text-center">Contact Us</h2>
             <p className="hidden lg:block lg:w-96 lg:mx-auto text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quas doloribus, cupiditate labore consequatur, in recusandae necessitatibus, quidem quia a cum iure eaque reiciendis. Eius eaque nostrum eos. Alias, sequi?</p>
@@ -23,9 +25,11 @@ const [updateFormOpen, setUpdateFormOpen] = useState(false)
                 <button className="h-4 w-20 mx-auto outline-none text-xs text-white text-center bg-[#8F9586] border-[#8F9586] rounded-md hover:bg-[#FF702A] transition-colors ease-in-out lg:h-10 lg:w-32 lg:text-base" onClick={()=>setUpdateFormOpen((prevState=>!prevState))}>Click Here!</button>
             </div>
 
-            <div className={`${updateFormOpen ? '' : 'hidden'} absolute top-[1920px] md:top-auto left-[12px] md:left-20 z-10 bg-[#366067] w-[475px] md:w-[600px] rounded-md hover:opacity-100 transition ease-in-out duration-500 shadow-lg shadow-black`}>
+
+                {/* update services form */}
+            <div className={`${updateFormOpen ? '' : 'hidden'} absolute top-[1920px] md:top-auto left-[2px] md:left-20 bg-[#366067] w-[425px] md:w-[600px] rounded-md hover:opacity-100 transition ease-in-out duration-500 shadow-lg shadow-black`}>
                 <h1 className="font-bebas text-4xl text-center text-white my-3">Update Services</h1>
-                <button onClick={()=>setUpdateFormOpen((prevState=>!prevState))} className="relative w-5 top-[-3rem] left-[27rem] md:left-[35rem]">
+                <button onClick={()=>setUpdateFormOpen((prevState=>!prevState))} className="relative w-5 top-[-3rem] left-[24rem] md:left-[35rem]">
                     <MdClose className='inline text-white' />
                 </button>
                 <form className="text-white">
@@ -59,6 +63,8 @@ const [updateFormOpen, setUpdateFormOpen] = useState(false)
                 </form>
             </div>
         </div>
+
+        {/* original form */}
         <div id="contactForm" className="">
             <form action="" className="flex flex-col flex-wrap place-content-center">
                 <div className="grid grid-cols-50-50 p-2 justify-between w-full">

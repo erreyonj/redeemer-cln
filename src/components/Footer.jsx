@@ -30,6 +30,7 @@ const Footer = () => {
                 <li><Link to='/Contact'>Contact</Link></li>
             </ul>
         </div>
+
         <div className="flex flex-col place-content-center w-1/3">
 
             <div className="flex flex-col flex-wrap w-32 font-bebas text-3xl place-content-center top-[-3rem] lg:static lg:w-auto lg:mt-7">
@@ -37,9 +38,10 @@ const Footer = () => {
                 <button className="" onClick={()=>setEmployeeFormOpen((prevState=>!prevState))}>Join Our Team!</button>
             </div>
 
-            <div id="newEmployeeForm" className={`${employeeFormOpen ? '' : 'hidden'} relative bottom-36 right-[17.5rem] md:top-auto md:right-[125%] z-10 bg-[#366067] w-[475px] md:w-[600px] rounded-md hover:opacity-100 transition ease-in-out duration-500 shadow-lg shadow-black`}>
-                <h1 className="font-bebas text-4xl text-center text-white my-3">Join Our Team</h1>
-                <button onClick={()=>setEmployeeFormOpen((prevState=>!prevState))} className="relative w-5 top-[-3rem] left-[27rem] md:left-[35rem]">
+            {/* new employee form */}
+            <div id="newEmployeeForm" className={`${employeeFormOpen ? '' : 'hidden'} relative bottom-48 right-[250px] md:top-auto md:right-[125%] z-10 bg-[#366067] w-[425px] md:w-[600px] rounded-md hover:opacity-100 transition ease-in-out duration-500 shadow-lg shadow-black`}>
+                <h1 className={`font-bebas text-4xl text-center text-white my-3`}>Join Our Team</h1>
+                <button onClick={()=>setEmployeeFormOpen((prevState=>!prevState))} className="relative w-5 top-[-3rem] left-[24rem] md:left-[35rem]">
                     <MdClose className='inline text-white' />
                 </button>
                 <form className="text-white">
