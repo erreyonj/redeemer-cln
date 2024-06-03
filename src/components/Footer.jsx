@@ -12,8 +12,6 @@ const Footer = () => {
     const { hash, pathname, search } = location
     const currentPage = `${pathname.slice(1)}`
     const [employeeFormOpen, setEmployeeFormOpen] = useState(false)
-    
-    console.log(currentPage);
 
   return (
     <footer className={`flex bg-[#272C29] *:text-white relative bottom-[0px] h-60 justify-around`}>

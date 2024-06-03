@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{html,js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -59,7 +59,7 @@ export default {
         pendSlideR: 'pendSlideR 1s infinite',
         infScrollLft: 'infScrollLft 80s infinite',
         infScrollRt: 'infScrollRt 80s infinite',
-        slideOutL: 'slideOutL .7s ease-in-out'
+        slideOutL: 'slideOutL .7s linear'
       },
     },
   },
