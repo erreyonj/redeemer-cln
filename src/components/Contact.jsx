@@ -8,6 +8,7 @@ const Contact = () => {
 
 // Component State
 const [updateFormOpen, setUpdateFormOpen] = useState(false)
+const [dateField, modifyDateField] = useState(false)
 
 // Component Function
 
@@ -27,7 +28,7 @@ const [updateFormOpen, setUpdateFormOpen] = useState(false)
 
 
                 {/* update services form */}
-            <div className={`${updateFormOpen ? '' : 'hidden'} absolute top-[1920px] md:top-auto left-[2px] md:left-20 bg-[#366067] w-[425px] md:w-[600px] rounded-md hover:opacity-100 transition ease-in-out duration-500 shadow-lg shadow-black`}>
+            <div className={`${updateFormOpen ? '' : 'hidden'} absolute top-[1920px] md:top-auto left-[2px] z-10 md:left-20 bg-[#366067] w-[425px] md:w-[600px] rounded-md hover:opacity-100 transition ease-in-out duration-500 shadow-lg shadow-black`}>
                 <h1 className="font-bebas text-4xl text-center text-white my-3">Update Services</h1>
                 <button onClick={()=>setUpdateFormOpen((prevState=>!prevState))} className="relative w-5 top-[-3rem] left-[24rem] md:left-[35rem]">
                     <MdClose className='inline text-white' />
@@ -50,7 +51,16 @@ const [updateFormOpen, setUpdateFormOpen] = useState(false)
                     </div>
                     <div className="inputGroup flex flex-col">
                         <label htmlFor="fname">Service Request</label>
-                        <input type="text" placeholder="Home, Commercial, etc..." className="border-none px-0 text-black"/>
+                        <select type="text" placeholder="Home, Commercial, etc..." onSelectCapture={()=>modifyDateField((prevState=>!prevState))} className="border-none px-0 text-black">
+                            <option value="">Services...</option>
+                            <option value="Commercial">Commercial</option>
+                            <option value="Move In/Out">Move In/Out</option>
+                            <option value="Specialty">Specialty</option>
+                        </select>
+                        {/* form state ... working on conditionally rendering appropriate fields based on sleections, Malik mentioned this?*/}
+
+                        <label htmlFor="fname" className={`${dateField ? 'APPEAR-ANI?' : 'hidden'}`}>New Dates</label>
+                        <input type="date"className="text-black"/>
                     </div>
                 </div>
 
