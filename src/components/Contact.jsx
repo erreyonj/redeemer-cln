@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { DayPicker } from "react-day-picker"
 import {MdClose} from 'react-icons/md'
 
 
@@ -51,7 +52,7 @@ const [dateField, modifyDateField] = useState(false)
                     </div>
                     <div className="inputGroup flex flex-col">
                         <label htmlFor="fname">Service Request</label>
-                        <select type="text" placeholder="Home, Commercial, etc..." onSelectCapture={()=>modifyDateField((prevState=>!prevState))} className="border-none px-0 text-black">
+                        <select type="text" placeholder="Home, Commercial, etc..." onChangeCapture={()=>modifyDateField((prevState=>!prevState))} className="border-none px-0 text-black">
                             <option value="">Services...</option>
                             <option value="Commercial">Commercial</option>
                             <option value="Move In/Out">Move In/Out</option>
@@ -59,8 +60,9 @@ const [dateField, modifyDateField] = useState(false)
                         </select>
                         {/* form state ... working on conditionally rendering appropriate fields based on sleections, Malik mentioned this?*/}
 
-                        <label htmlFor="fname" className={`${dateField ? 'APPEAR-ANI?' : 'hidden'}`}>New Dates</label>
-                        <input type="date"className="text-black"/>
+                        <label htmlFor="fname" className={`${dateField ? '' : 'hidden'}`}>New Dates</label>
+                        {/* <input type="date"className={`${dateField ? '' : 'hidden'} text-black`}/> */}
+                        <DayPicker mode="multiple" />
                     </div>
                 </div>
 
